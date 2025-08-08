@@ -158,7 +158,7 @@ def main():
     st.markdown("## 📊 Indicateurs Clés")
 
     ca = (filtered_sales["price"] * filtered_sales["qty_ordered"]).sum()
-    val1.metric("Chiffre d'affaire", f"{ca:,.0f} FCFA")
+    val1.metric("Chiffre d'affaire", f"{ca:,.0f} $")
 
     clients = filtered_sales["cust_id"].nunique()
     val2.metric("Nombre de clients", clients)
